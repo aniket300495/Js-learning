@@ -30,3 +30,26 @@ const myFunction = function(){
 }
 // myFunction();
 // console.log(typeof myFunction);
+
+//  Stack & Heap Memory 
+
+// Stack (Primitive)
+let myYoutubename = "ani";
+let anotherName = myYoutubename;
+anotherName = 'lalu';
+
+console.log(myYoutubename);
+console.log(anotherName);
+
+// Heap (Non-Primitive)
+
+let userOne = {
+    email: 'temp@gmail.com',
+    upi: '977@upi',
+}
+
+let userTwo = userOne;
+userTwo.email = 'tempmail@gmail.com';
+
+console.log(userOne);
+console.log(userTwo);
