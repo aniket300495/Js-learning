@@ -1,6 +1,6 @@
 // array 
 // const myArray = [0, 1, 2,3 ,4 , 5, true, 'ani'];
-const onePiece = ['luffy', 'sabo', 'zoro', 'sanji', 'chopper', 'franky', 'usopp'];
+
 const myArr2 = new Array(1,2,3,4,5);
 
 // console.log(myArray[2]);
