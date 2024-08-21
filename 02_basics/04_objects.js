@@ -1,5 +1,4 @@
 // const tinderUser = new Object(); // singleton
-
 const tinderUser = {};
 
 tinderUser.id = "123abc";
@@ -20,38 +19,17 @@ const regularUser = {
 // console.log(regularUser.fullName?.userfullname.firstname);
 
 // combining obj
-
-const obj1 = {
-    1: 'a', 
-    2: 'b',
-}
-const obj2 = {
-    3: 'c', 
-    4: 'd',
-}
-const obj3 = {
-    5: 'e', 
-    6: 'f',
-}
+const obj1 = {1: 'a', 2: 'b'}
+const obj2 = {3: 'c', 4: 'd'}
+const obj3 = {5: 'e', 6: 'f'}
 
 // const obj3 = {obj1, obj2};
 // const obj4 = Object.assign({}, obj1, obj2, obj3); //here empty curly braces are for new object which is target where it should be stored.
 
 const obj4 = {...obj1, ...obj2, ...obj3};
-
 // console.log(obj4);
 
-
-const users = [
-    {
-        id: 1,
-        email: '12@gmail.com'
-    },
-    {
-        id: 2,
-        email: '134@gmail.com'
-    }
-]
+const users = [{ id: 1, email: '12@gmail.com'}, { id: 2,email: '134@gmail.com'}];
 
 // console.log(users[1].id);
 // console.log(tinderUser);
@@ -60,11 +38,32 @@ const users = [
 // console.log(Object.values(tinderUser)); //returns an array of all values present in object
 // console.log(Object.entries(tinderUser)); // returns an array of key, value pair as array for each entries in the object like nested array
 
-console.log(tinderUser.hasOwnProperty('isLoggedIn'));
+// console.log(tinderUser.hasOwnProperty('isLoggedIn'));
 
 
+// 18) Objects de-structure & JSON API
+// destructuring
+const course = {
+    courseName : "JavaScript",
+    price: "999",
+    courseInstructor: "chai aur code"
+}
 
+// course.courseInstructor;
+const {courseInstructor: instructor} = course;
+// console.log(instructor);
 
+// const navbar = ({company}) => {
+
+// };
+// navbar(company = "asus");
+
+// json file type example
+// {
+//     "courseName" : "JavaScript",
+//     "price": "999",
+//     "courseInstructor": "chai aur code"  
+// }
 
 
 
